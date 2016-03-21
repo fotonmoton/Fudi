@@ -1,6 +1,5 @@
 @import 'font';
 
-$container-width: 1180px;
 
 html, body {
 	height: 100%;
@@ -11,20 +10,40 @@ html, body {
 	padding: 0;
 	font-family: Lato, Arial, Helvetica, sans-serif;
 	font-size: 100%;
+	color: #000;
 }
 
 div.container {
-	max-width: $container-width;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	max-width: 72rem;
 	margin: auto;
-	padding: 0rem 1rem;
+}
+
+.title {
+	position: relative;
+	padding-top: 0.7rem;
+	padding-bottom: 0.3rem;
+
+	&:before {
+		content: "";
+	    position: absolute;
+	    width: 70%;
+	    height: 1px;
+	    bottom: 0;
+	    left: 15%;
+	    border-bottom: 1px solid red;
+	}	
 }
 
 body {
 	display: flex;
 	flex-direction: column;
+	
 
 	header {
 		min-height: 100%;
+		width: 100%;
 
 		background: url("../img/main_image.png") no-repeat center center;
 		background-size: cover;
@@ -34,9 +53,9 @@ body {
 			flex-direction: column;
 
 			padding-top: 1rem;
-
 			height: 100%;
-			color: #fff;
+			
+
 
 			#menu {
 				display: flex;
@@ -83,11 +102,11 @@ body {
 					font-weight: normal;
 					font-size: 5rem;
 					line-height: 5rem;
+					color: #fff;
 				}
 
 				a {
 					text-decoration: none;
-					color: #fff;
 
 					#get-started {
 					border: 2px solid #fff;
@@ -100,6 +119,7 @@ body {
 						font-family: Lato-bold, Arial, Helvetica, sans-serif;
 						font-weight: normal;
 						font-size: 1rem;
+						color: #fff;
 					}
 				}
 
@@ -120,6 +140,8 @@ body {
 		section.section-1 {
 
 			div.tagline-container {
+					padding-top: 4rem;
+					padding-bottom: 4rem;
 
 				ul.wrapper {
 					display: flex;
@@ -128,10 +150,15 @@ body {
 
 					list-style: none;
 
-					padding: 4rem 0rem;
+
 
 					// add padding for 2nd li
-					
+
+
+					li:nth-child(2) {
+						margin: 0rem 2rem;
+					}
+
 					li.tagline {
 						display: flex;
 						flex-direction: column;
@@ -140,7 +167,7 @@ body {
 
 						text-align: center;
 
-						width: $container-width / 3.5;
+						max-width: 22rem;
 
 						div.img-tag-wrapper {
 							display: flex;
@@ -155,25 +182,10 @@ body {
 
 						}
 
-						h4 {
-							position: relative;
-							padding-top: 0.7rem;
-							padding-bottom: 0.3rem;
-
-							&:before {
-								content: "";
-							    position: absolute;
-							    width: 70%;
-							    height: 1px;
-							    bottom: 0;
-							    left: 15%;
-							    border-bottom: 1px solid red;
-							}	
-						}
-
-						p {
+						p.tagline-text {
 							padding: 0.7rem 0rem 0rem 0rem;
 							font-family: Lato-light, Arial, Helvetica, sans-serif;
+							line-height: 1.4rem;
 						}
 					}
 				}
@@ -187,8 +199,65 @@ body {
 
 				display: flex;
 				justify-content: space-between;
+				align-items: flex-start;
 
 				padding-top: 4rem;
+
+				div.img-wrap {
+					min-width: 400px;
+
+    				img {
+    					max-width: 100%;
+    					height: auto;
+    				}
+				}
+				
+				div.main-text {
+					max-width: 33rem;
+					min-width: 24rem;
+					padding-left: 4rem;
+					padding-top: 4rem;
+
+					h4.title {
+						margin-bottom: 0.7rem;
+						&:before {
+							content: "";
+						    position: absolute;
+						    width: 20%;
+						    height: 1px;
+						    bottom: 0;
+						    left: 0;
+						    border-bottom: 1px solid red;
+						}	
+					}
+
+					p {
+						margin-bottom: 2rem;
+						
+						font-family: Lato-light, Arial, Helvetica, sans-serif;
+						line-height: 1.4rem;
+					}
+
+					div.store-wrap {
+						display: flex;
+						justify-content: space-between;
+						max-width: 26rem;
+					}
+				}
+			}
+		}
+
+		section.section-3 {
+			background-color: rgba(74, 57, 73, 1);
+
+			div.review-container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				background: url("../img/review_bg.png") center center;
+				background-size: cover;
+				padding-top: 4rem;
+				padding-bottom: 4rem;
 			}
 		}
 	}
