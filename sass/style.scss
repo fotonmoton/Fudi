@@ -207,7 +207,7 @@ body {
 
     				img {
     					max-width: 100%;
-    					height: auto;
+    					vertical-align: middle;
     				}
 				}
 				
@@ -253,10 +253,186 @@ body {
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+
 				background: url("../img/review_bg.png") center center;
 				background-size: cover;
-				padding-top: 4rem;
-				padding-bottom: 4rem;
+
+				padding-top: 6rem;
+				padding-bottom: 6rem;
+
+				h4, p {
+					font-family: Lato-hairline, Arial, Helvetica, sans-serif;
+					font-weight: normal;
+					text-align: center;
+					color: #fff;
+					line-height: 3rem;
+
+				}
+
+				h4 {
+					font-size: 1.4rem;
+				}
+			}
+		}
+
+		section.section-4 {
+
+			h4 {
+				margin-top: 4rem;
+				margin-bottom: 2rem;
+			}
+
+			div.cusines {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				max-width: 100%;
+				margin: auto;
+				padding: 0;
+
+				div.cusine-wrap {
+					display: flex;
+					flex-wrap: wrap;
+					width: 100%;
+
+					div.cusine {
+						flex: 1 1 20%;
+
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+
+						padding: 6rem 0rem;
+
+						p {
+							font-family: "Times New Roman", Times, serif;
+							font-style: italic;
+							font-weight: bold;
+							font-size: 1rem;
+							color: rgba(255, 255, 255, 0.8);
+						}
+
+						h2 {
+							font-family: Lato-bold, Arial, Helvetica, sans-serif;
+							font-size: 2rem;
+							color: #fff;
+						}
+					}
+
+					div.cusine-1 {
+						background: url("../img/img1.png") center center;
+						background-size: cover;
+					}
+
+					div.cusine-2 {
+						background: url("../img/img2.png") center center;
+						background-size: cover;
+					}
+
+					div.cusine-3 {
+						background: url("../img/img3.png") center center;
+						background-size: cover;
+					}
+
+					div.cusine-4 {
+						background: url("../img/img4.png") center center;
+						background-size: cover;
+					}
+
+					div.cusine-5 {
+						background: url("../img/img5.png") center center;
+						background-size: cover;
+					}
+
+					div.cusine-6 {
+						background: url("../img/img6.png") center center;
+						background-size: cover;
+					}
+
+					div.cusine-7 {
+						background: url("../img/img7.png") center center;
+						background-size: cover;
+					}
+
+					div.cusine-8 {
+						background: url("../img/img8.png") center center;
+						background-size: cover;
+					}
+
+					div.cusine-9 {
+						background: url("../img/img9.png") center center;
+						background-size: cover;
+					}
+
+					div.cusine-10 {
+						background: url("../img/img10.png") center center;
+						background-size: cover;
+					}
+				}
+			}
+		}
+
+		section.section-5 {
+
+			div.container {
+
+				div.stats-wrap {
+					display: flex;
+					justify-content: space-between;
+
+					padding: 3rem 0rem;
+					
+					div.stat {
+						text-align: center;
+
+						h2 {
+							font-family: Lato-bold, Arial, Helvetica, sans-serif;
+							font-size: 2rem;
+						}
+
+						p {
+							font-family: Lato-light, Arial, Helvetica, sans-serif;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	footer {
+		border-top: 1px solid #D2D2D2;
+		background-color: #f7f7f7;
+
+		div.footer-container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+
+			font-size: 0.9rem;
+
+			p.copyright {
+				font-family: Lato-light, Arial, Helvetica, sans-serif;
+				color: #8b8b8b;
+			}
+
+
+			ul.by {
+				list-style-type: none;
+
+				li h3 {
+					font-family: Lato, Arial, Helvetica, sans-serif;
+					color: #8b8b8b;
+
+					a {
+						text-decoration: none;
+						color: #414141;
+					}
+				}
 			}
 		}
 	}
