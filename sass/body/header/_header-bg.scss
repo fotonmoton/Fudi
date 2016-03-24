@@ -1,0 +1,13 @@
+// Some hack for further manipulation with header background image.
+// Header-bg containver stays under header container with absolute positioning
+
+div.header-bg {
+	background: url("../img/main_image.jpg") no-repeat center center;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}

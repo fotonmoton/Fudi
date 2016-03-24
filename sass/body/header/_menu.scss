@@ -1,0 +1,28 @@
+#menu {
+	display: flex;
+	justify-content: space-between;
+	
+	a.logo-wrap {
+		img#logo {
+			display: block;
+		}
+	}
+
+	ul {
+		display: flex;
+		align-items: center;
+
+		li {
+			list-style-type: none;
+			padding-left: 1rem;
+			cursor: pointer;
+
+			a {
+				font-family: Lato-bold, Arial, Helvetica, sans-serif;
+				font-size: 0.9rem;
+				text-decoration: none;
+				color: #fff;
+			}
+		}
+	}
+}

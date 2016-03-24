@@ -1,0 +1,6 @@
+- responsive
+- media queries
+- animations (animate.css)
+- SCSS includes
+- js events
+- cusines and logo as links

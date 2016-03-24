@@ -1,0 +1,35 @@
+footer {
+	border-top: 1px solid #D2D2D2;
+	background-color: #f7f7f7;
+
+	div.footer-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+
+		font-size: 0.9rem;
+
+		p.copyright {
+			font-family: Lato-light, Arial, Helvetica, sans-serif;
+			color: #8b8b8b;
+		}
+
+
+		ul.by {
+			list-style-type: none;
+
+			li h3 {
+				font-family: Lato, Arial, Helvetica, sans-serif;
+				color: #8b8b8b;
+
+				a {
+					text-decoration: none;
+					color: #414141;
+				}
+			}
+		}
+	}
+}

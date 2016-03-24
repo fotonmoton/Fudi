@@ -1,0 +1,28 @@
+section.section-3 {
+	background-color: rgba(74, 57, 73, 1);
+
+	div.review-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		background: url("../img/review_bg.jpg") center center;
+		background-size: cover;
+
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+
+		h4, p {
+			font-family: Lato-hairline, Arial, Helvetica, sans-serif;
+			font-weight: normal;
+			text-align: center;
+			color: #fff;
+			line-height: 3rem;
+
+		}
+
+		h4 {
+			font-size: 1.4rem;
+		}
+	}
+}

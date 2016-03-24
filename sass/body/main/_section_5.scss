@@ -1,0 +1,25 @@
+section.section-5 {
+
+	div.container {
+
+		div.stats-wrap {
+			display: flex;
+			justify-content: space-between;
+
+			padding: 3rem 0rem;
+			
+			div.stat {
+				text-align: center;
+
+				h2 {
+					font-family: Lato-bold, Arial, Helvetica, sans-serif;
+					font-size: 2rem;
+				}
+
+				p {
+					font-family: Lato-light, Arial, Helvetica, sans-serif;
+				}
+			}
+		}
+	}
+}
