@@ -5,7 +5,7 @@ section.section-4 {
 		margin-bottom: 2rem;
 	}
 
-	div.cusines {
+	div.cuisines {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -14,12 +14,12 @@ section.section-4 {
 		margin: auto;
 		padding: 0;
 
-		div.cusine-wrap {
+		div.cuisine-wrap {
 			display: flex;
 			flex-wrap: wrap;
 			width: 100%;
 
-			a.cusine-link {
+			a.cuisine-link {
 				flex: 1 1 20%;
 				display: flex;
 				flex-direction: column;
@@ -28,11 +28,23 @@ section.section-4 {
 
 				text-decoration: none;
 
-				div.cusine {
+				@media screen and (max-width: 1300px) {
+					flex-basis: 25%;
+				}
+
+				@media screen and (max-width: 1000px) {
+					flex-basis: 50%;
+				}
+
+				div.cuisine {
 					background-size: cover;
 					padding: 6rem 0rem;
 					width: 100%;
 					text-align: center;
+					
+					@media screen and (max-width: 1000px) {
+						padding: 9rem 0rem;
+					}
 
 					p {
 						font-family: "Times New Roman", Times, serif;
@@ -51,43 +63,43 @@ section.section-4 {
 			}
 			
 
-			div.cusine-1 {
+			div.cuisine-1 {
 				background: url("../img/img1.jpg") center center;
 			}
 
-			div.cusine-2 {
+			div.cuisine-2 {
 				background: url("../img/img2.jpg") center center;
 			}
 
-			div.cusine-3 {
+			div.cuisine-3 {
 				background: url("../img/img3.jpg") center center;
 			}
 
-			div.cusine-4 {
+			div.cuisine-4 {
 				background: url("../img/img4.jpg") center center;
 			}
 
-			div.cusine-5 {
+			div.cuisine-5 {
 				background: url("../img/img5.jpg") center center;
 			}
 
-			div.cusine-6 {
+			div.cuisine-6 {
 				background: url("../img/img6.jpg") center center;
 			}
 
-			div.cusine-7 {
+			div.cuisine-7 {
 				background: url("../img/img7.jpg") center center;
 			}
 
-			div.cusine-8 {
+			div.cuisine-8 {
 				background: url("../img/img8.jpg") center center;
 			}
 
-			div.cusine-9 {
+			div.cuisine-9 {
 				background: url("../img/img9.jpg") center center;
 			}
 
-			div.cusine-10 {
+			div.cuisine-10 {
 				background: url("../img/img10.jpg") center center;
 			}
 		}

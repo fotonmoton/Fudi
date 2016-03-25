@@ -6,11 +6,20 @@ footer {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-wrap: wrap;
 
 		padding-top: 2rem;
 		padding-bottom: 2rem;
 
 		font-size: 0.9rem;
+
+		.footer-element {
+			@media screen and (max-width: 600px) {
+				flex: 1 1 100%;
+				text-align: center;
+
+			}
+		}
 
 		p.copyright {
 			font-family: Lato-light, Arial, Helvetica, sans-serif;
@@ -20,6 +29,11 @@ footer {
 
 		ul.by {
 			list-style-type: none;
+
+			@media screen and (max-width: 600px) {
+				padding-top: 1rem;
+
+			}	
 
 			li h3 {
 				font-family: Lato, Arial, Helvetica, sans-serif;

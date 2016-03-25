@@ -30,12 +30,12 @@ html, body {
   color: #000;
 }
 
-.title {
+h4.title {
   position: relative;
   padding-top: 0.7rem;
   padding-bottom: 0.3rem;
 }
-.title:before {
+h4.title:before {
   content: "";
   position: absolute;
   width: 70%;
@@ -66,6 +66,7 @@ body {
 body header {
   min-height: 100%;
   width: 100%;
+  height: 100%;
 }
 body header div.header-container {
   display: -webkit-box;
@@ -268,18 +269,56 @@ body main section.section-2 div.main-container {
           align-items: flex-start;
   padding-top: 4rem;
 }
+@media screen and (max-width: 1024px) {
+  body main section.section-2 div.main-container {
+    -webkit-flex-wrap: wrap-reverse;
+        -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 body main section.section-2 div.main-container div.img-wrap {
   min-width: 400px;
 }
-body main section.section-2 div.main-container div.img-wrap img {
+body main section.section-2 div.main-container div.img-wrap picture {
+  width: 100%;
+}
+body main section.section-2 div.main-container div.img-wrap picture img {
   max-width: 100%;
   display: block;
 }
 body main section.section-2 div.main-container div.main-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   max-width: 33rem;
-  min-width: 24rem;
   padding-left: 4rem;
   padding-top: 4rem;
+}
+@media screen and (max-width: 1024px) {
+  body main section.section-2 div.main-container div.main-text {
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 4rem;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
 }
 body main section.section-2 div.main-container div.main-text h4.title {
   margin-bottom: 0.7rem;
@@ -287,7 +326,7 @@ body main section.section-2 div.main-container div.main-text h4.title {
 body main section.section-2 div.main-container div.main-text h4.title:before {
   content: "";
   position: absolute;
-  width: 20%;
+  width: 30%;
   height: 1px;
   bottom: 0;
   left: 0;
@@ -308,6 +347,23 @@ body main section.section-2 div.main-container div.main-text ul.store-wrap {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 26rem;
+  width: 100%;
+}
+@media screen and (max-width: 540px) {
+  body main section.section-2 div.main-container div.main-text ul.store-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main section.section-2 div.main-container div.main-text ul.store-wrap li {
+    padding-top: 1rem;
+  }
 }
 body main section.section-2 div.main-container div.main-text ul.store-wrap li.store-button {
   list-style-type: none;
@@ -351,7 +407,7 @@ body main section.section-4 h4 {
   margin-top: 4rem;
   margin-bottom: 2rem;
 }
-body main section.section-4 div.cusines {
+body main section.section-4 div.cuisines {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -369,7 +425,7 @@ body main section.section-4 div.cusines {
   margin: auto;
   padding: 0;
 }
-body main section.section-4 div.cusines div.cusine-wrap {
+body main section.section-4 div.cuisines div.cuisine-wrap {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -379,7 +435,7 @@ body main section.section-4 div.cusines div.cusine-wrap {
           flex-wrap: wrap;
   width: 100%;
 }
-body main section.section-4 div.cusines div.cusine-wrap a.cusine-link {
+body main section.section-4 div.cuisines div.cuisine-wrap a.cuisine-link {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 20%;
       -ms-flex: 1 1 20%;
@@ -403,52 +459,71 @@ body main section.section-4 div.cusines div.cusine-wrap a.cusine-link {
           align-items: center;
   text-decoration: none;
 }
-body main section.section-4 div.cusines div.cusine-wrap a.cusine-link div.cusine {
+@media screen and (max-width: 1300px) {
+  body main section.section-4 div.cuisines div.cuisine-wrap a.cuisine-link {
+    -webkit-flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  body main section.section-4 div.cuisines div.cuisine-wrap a.cuisine-link {
+    -webkit-flex-basis: 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+  }
+}
+body main section.section-4 div.cuisines div.cuisine-wrap a.cuisine-link div.cuisine {
   background-size: cover;
   padding: 6rem 0rem;
   width: 100%;
   text-align: center;
 }
-body main section.section-4 div.cusines div.cusine-wrap a.cusine-link div.cusine p {
+@media screen and (max-width: 1000px) {
+  body main section.section-4 div.cuisines div.cuisine-wrap a.cuisine-link div.cuisine {
+    padding: 9rem 0rem;
+  }
+}
+body main section.section-4 div.cuisines div.cuisine-wrap a.cuisine-link div.cuisine p {
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: bold;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
 }
-body main section.section-4 div.cusines div.cusine-wrap a.cusine-link div.cusine h2 {
+body main section.section-4 div.cuisines div.cuisine-wrap a.cuisine-link div.cuisine h2 {
   font-family: Lato-bold, Arial, Helvetica, sans-serif;
   font-size: 2rem;
   color: #fff;
 }
-body main section.section-4 div.cusines div.cusine-wrap div.cusine-1 {
+body main section.section-4 div.cuisines div.cuisine-wrap div.cuisine-1 {
   background: url("../img/img1.jpg") center center;
 }
-body main section.section-4 div.cusines div.cusine-wrap div.cusine-2 {
+body main section.section-4 div.cuisines div.cuisine-wrap div.cuisine-2 {
   background: url("../img/img2.jpg") center center;
 }
-body main section.section-4 div.cusines div.cusine-wrap div.cusine-3 {
+body main section.section-4 div.cuisines div.cuisine-wrap div.cuisine-3 {
   background: url("../img/img3.jpg") center center;
 }
-body main section.section-4 div.cusines div.cusine-wrap div.cusine-4 {
+body main section.section-4 div.cuisines div.cuisine-wrap div.cuisine-4 {
   background: url("../img/img4.jpg") center center;
 }
-body main section.section-4 div.cusines div.cusine-wrap div.cusine-5 {
+body main section.section-4 div.cuisines div.cuisine-wrap div.cuisine-5 {
   background: url("../img/img5.jpg") center center;
 }
-body main section.section-4 div.cusines div.cusine-wrap div.cusine-6 {
+body main section.section-4 div.cuisines div.cuisine-wrap div.cuisine-6 {
   background: url("../img/img6.jpg") center center;
 }
-body main section.section-4 div.cusines div.cusine-wrap div.cusine-7 {
+body main section.section-4 div.cuisines div.cuisine-wrap div.cuisine-7 {
   background: url("../img/img7.jpg") center center;
 }
-body main section.section-4 div.cusines div.cusine-wrap div.cusine-8 {
+body main section.section-4 div.cuisines div.cuisine-wrap div.cuisine-8 {
   background: url("../img/img8.jpg") center center;
 }
-body main section.section-4 div.cusines div.cusine-wrap div.cusine-9 {
+body main section.section-4 div.cuisines div.cuisine-wrap div.cuisine-9 {
   background: url("../img/img9.jpg") center center;
 }
-body main section.section-4 div.cusines div.cusine-wrap div.cusine-10 {
+body main section.section-4 div.cuisines div.cuisine-wrap div.cuisine-10 {
   background: url("../img/img10.jpg") center center;
 }
 body main section.section-5 div.container div.stats-wrap {
@@ -460,10 +535,38 @@ body main section.section-5 div.container div.stats-wrap {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   padding: 3rem 0rem;
+}
+@media screen and (max-width: 800px) {
+  body main section.section-5 div.container div.stats-wrap {
+    padding-top: 0;
+    max-width: 21rem;
+    margin: auto;
+  }
 }
 body main section.section-5 div.container div.stats-wrap div.stat {
   text-align: center;
+}
+@media screen and (max-width: 800px) {
+  body main section.section-5 div.container div.stats-wrap div.stat {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 50%;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+    padding-top: 3rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  body main section.section-5 div.container div.stats-wrap div.stat {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    padding-top: 3rem;
+  }
 }
 body main section.section-5 div.container div.stats-wrap div.stat h2 {
   font-family: Lato-bold, Arial, Helvetica, sans-serif;
@@ -489,9 +592,21 @@ body footer div.footer-container {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   padding-top: 2rem;
   padding-bottom: 2rem;
   font-size: 0.9rem;
+}
+@media screen and (max-width: 600px) {
+  body footer div.footer-container .footer-element {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 100%;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    text-align: center;
+  }
 }
 body footer div.footer-container p.copyright {
   font-family: Lato-light, Arial, Helvetica, sans-serif;
@@ -499,6 +614,11 @@ body footer div.footer-container p.copyright {
 }
 body footer div.footer-container ul.by {
   list-style-type: none;
+}
+@media screen and (max-width: 600px) {
+  body footer div.footer-container ul.by {
+    padding-top: 1rem;
+  }
 }
 body footer div.footer-container ul.by li h3 {
   font-family: Lato, Arial, Helvetica, sans-serif;

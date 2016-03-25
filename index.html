@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Recipes</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -83,7 +84,11 @@
 		<section class="section-2">
 			<div class="container main-container">
 				<div class="img-wrap">
-					<img src="img/iphone5s.png" alt="" class="iphone">
+					<picture>
+						<source media="(min-width: 1025px)" srcset="img/iphone5s.png"></<source>
+						<source media="(max-width: 1024px)" srcset="img/iphone5s_medium.png"></source>
+						<img src="img/iphone5s.png" alt="iphone image" class="iphone">
+					</picture>
 				</div>
 				<div class="main-text">
 					<h4 class="title">
@@ -126,87 +131,87 @@
 			</div>
 		</section>
 		<section class="section-4">
-			<div class="container cusines">
+			<div class="container cuisines">
 				<h4 class="title">
 					BROWSE BY CUISINES
 				</h4>
-				<div class="cusine-wrap">
-					<a href="#" class="cusine-link">
-						<div class="cusine cusine-1">
+				<div class="cuisine-wrap">
+					<a href="#" class="cuisine-link">
+						<div class="cuisine cuisine-1">
 							<p class="recipe-number">327 Recipes</p>
-							<h2 class="cusine-title">
+							<h2 class="cuisine-title">
 								ITALIAN
 							</h2>
 						</div>
 					</a>
-					<a href="#" class="cusine-link">
-						<div class="cusine cusine-2">
+					<a href="#" class="cuisine-link">
+						<div class="cuisine cuisine-2">
 							<p class="recipe-number">123 Recipes</p>
-							<h2 class="cusine-title">
+							<h2 class="cuisine-title">
 								INDIAN
 							</h2>
 						</div>
 					</a>
-					<a href="#" class="cusine-link">
-						<div class="cusine cusine-3">
+					<a href="#" class="cuisine-link">
+						<div class="cuisine cuisine-3">
 							<p class="recipe-number">321 Recipes</p>
-							<h2 class="cusine-title">
+							<h2 class="cuisine-title">
 								FRENCH
 							</h2>
 						</div>
 					</a>
-					<a href="#" class="cusine-link">
-						<div class="cusine cusine-4">
+					<a href="#" class="cuisine-link">
+						<div class="cuisine cuisine-4">
 							<p class="recipe-number">234 Recipes</p>
-							<h2 class="cusine-title">
+							<h2 class="cuisine-title">
 								STEAKHOUSE
 							</h2>
 						</div>
 					</a>
-					<a href="#" class="cusine-link">
-						<div class="cusine cusine-5">
+					<a href="#" class="cuisine-link">
+						<div class="cuisine cuisine-5">
 							<p class="recipe-number">345 Recipes</p>
-							<h2 class="cusine-title">
+							<h2 class="cuisine-title">
 								SEAFOOD
 							</h2>
 						</div>
 					</a>
-					<a href="#" class="cusine-link">
-						<div class="cusine cusine-6">
+					<a href="#" class="cuisine-link">
+						<div class="cuisine cuisine-6">
 							<p class="recipe-number">345 Recipes</p>
-							<h2 class="cusine-title">
+							<h2 class="cuisine-title">
 								SUSHI
 							</h2>
 						</div>
 					</a>
-					<a href="#" class="cusine-link">
-						<div class="cusine cusine-7">
+					<a href="#" class="cuisine-link">
+						<div class="cuisine cuisine-7">
 							<p class="recipe-number">56 Recipes</p>
-							<h2 class="cusine-title">
+							<h2 class="cuisine-title">
 								MEXICAN
 							</h2>
 						</div>
 					</a>
-					<a href="#" class="cusine-link">
-						<div class="cusine cusine-8">
+					<a href="#" class="cuisine-link">
+						<div class="cuisine cuisine-8">
 							<p class="recipe-number">78 Recipes</p>
-							<h2 class="cusine-title">
+							<h2 class="cuisine-title">
 								CHINESE
 							</h2>
 						</div>
 					</a>
-					<a href="#" class="cusine-link">
-						<div class="cusine cusine-9">
+					<a href="#" class="cuisine-link">
+						<div class="cuisine cuisine-9">
 							<p class="recipe-number">786 Recipes</p>
-							<h2 class="cusine-title">
+							<h2 class="cuisine-title">
 								PIZZA
 							</h2>
 						</div>
 					</a>
-					<a href="#" class="cusine-link">
-						<div class="cusine cusine-10">
+					<a href="#" class="cuisine-link">
+						<div class="cuisine cuisine-10">
 							<p class="recipe-number">543 Recipes</p>
-							<h2 class="cusine-title">
+							<h2 class="cuisine-title">
 								AMERICAN
 							</h2>
 						</div>
@@ -263,10 +268,10 @@
 	</main>
 	<footer>
 		<div class="container footer-container">
-			<p class="copyright">
+			<p class="copyright footer-element">
 				©2014 Fudi. All Rights Reserved
 			</p>
-			<ul class="by">
+			<ul class="by footer-element">
 				<li>
 					<h3>DESIGN BY: <a href="https://www.behance.net/gallery/16951129/FREE-PSD-Multipurpose-Landing-Page">Kristijan Binski</a></h3>
 				</li>
