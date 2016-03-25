@@ -64,7 +64,7 @@ body {
           flex-direction: column;
 }
 body header {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
 }
 body header div.header-container {
