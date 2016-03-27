@@ -11,6 +11,46 @@ section.section-1 {
 
 			list-style: none;
 
+			@media screen and (max-width: 750px) {
+				justify-content: center;
+				align-items: flex-start;
+				flex-wrap: wrap;
+
+				li.tagline {
+					flex: 1 1 40%;
+				}
+				
+				li.tagline:nth-child(1) {
+					padding-right: 1rem;
+				}
+
+				li.tagline:nth-child(2) {
+					margin: 0;
+					padding-left: 1rem;
+				}
+
+				li.tagline:nth-child(3) {
+					padding-top: 4rem;
+				}
+
+			}
+
+			@media screen and (max-width: 550px){
+				li.tagline {
+					flex-basis: 100%;
+				}
+
+				li.tagline:nth-child(1) {
+					padding-right: 0rem;
+				}
+
+				li.tagline:nth-child(2) {
+					margin: 0;
+					padding-left: 0rem;
+					padding-top: 4rem;
+				}
+			}
+
 			li:nth-child(2) {
 				margin: 0rem 2rem;
 			}

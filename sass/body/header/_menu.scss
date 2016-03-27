@@ -1,8 +1,13 @@
 #menu {
 	display: flex;
 	justify-content: space-between;
+
+	@media screen and (max-width: 500px) {
+		justify-content: center;
+	}
 	
 	a.logo-wrap {
+		
 		img#logo {
 			display: block;
 		}
@@ -11,6 +16,10 @@
 	ul {
 		display: flex;
 		align-items: center;
+
+		@media screen and (max-width: 500px) {
+			display: none;
+		}
 
 		li {
 			list-style-type: none;

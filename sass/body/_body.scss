@@ -37,6 +37,11 @@ div.container {
 	padding-right: 4rem;
 	max-width: 72rem;
 	margin: auto;
+
+	@media screen and (max-width: 500px) {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 }
 
 // main styles

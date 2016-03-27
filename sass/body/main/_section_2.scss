@@ -26,6 +26,10 @@ section.section-2 {
 					display: block;
 				}
 			}
+
+			@media screen and (max-width: 550px) {
+				display: none;
+			}
 		}
 		
 		div.main-text {
