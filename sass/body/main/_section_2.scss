@@ -1,22 +1,38 @@
 section.section-2 {
 	background-color: #f7f7f7;
 
+	z-index:  1;
+	position: relative;
+
 	div.main-container {
 
-		display: flex;
+		display:         flex;
 		justify-content: space-between;
-		align-items: flex-start;
+		align-items:     flex-start;
 
 		padding-top: 4rem;
 
-
 		@media screen and (max-width: 1024px) {
-			flex-wrap: wrap-reverse;
+			flex-wrap:       wrap-reverse;
 			justify-content: center;
 		}
 		
 		div.img-wrap {
 			min-width: 400px;
+
+			position: relative;
+		    bottom: -10px;
+		    transition-property:        bottom;
+		    transition-duration:        0.1s;
+		    transition-timing-function: linear;
+
+		    &:hover {
+		    	position: relative;
+			    bottom: 0px;
+			    transition-property:        bottom;
+			    transition-duration:        0.1s;
+			    transition-timing-function: linear;
+		    }
 
 			picture {
 				width: 100%;
@@ -30,28 +46,31 @@ section.section-2 {
 			@media screen and (max-width: 550px) {
 				display: none;
 			}
+
+
 		}
 		
 		div.main-text {
-			display: flex;
-			flex-direction:column;
-			align-items: flex-start;
+			display:        flex;
+			flex-direction: column;
+			align-items:    flex-start;
 
-			max-width: 33rem;
+			max-width:    33rem;
 			padding-left: 4rem;
-			padding-top: 4rem;
+			padding-top:  4rem;
 
 			@media screen and (max-width: 1024px) {
-				padding-left: 0;
-				padding-top: 0;
+				padding-left:   0;
+				padding-top:    0;
 				padding-bottom: 4rem;
 				
 				align-items: center;
-				text-align: center;
+				text-align:  center;
 			}
 
 			h4.title {
 				margin-bottom: 0.7rem;
+				
 				&:before {
 					content: "";
 				    position: absolute;
@@ -73,14 +92,14 @@ section.section-2 {
 			}
 
 			ul.store-wrap {
-				display: flex;
+				display:         flex;
 				justify-content: space-between;
 				max-width: 26rem;
-				width: 100%;
+				width:     100%;
 
 				@media screen and (max-width: 540px) {
 					flex-direction: column;
-					align-items: center;
+					align-items:    center;
 
 					li {
 						padding-top: 1rem;

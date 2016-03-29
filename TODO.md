@@ -1,6 +1,2 @@
-- responsive
-- media queries
-- animations (animate.css)
-- SCSS includes
-- js events
-- cusines and logo as links
+- js events (animation on scrolling, carusel in review section)
+- ukrainian language

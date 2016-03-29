@@ -1,17 +1,24 @@
 #center-text {
-	align-self: center;
-	display: flex;
-	flex-direction: column;
+	align-self:      center;
+	display:         flex;
+	flex-direction:  column;
 	justify-content: center;
-	align-items: center;
-	text-align: center;
+	align-items:     center;
+	text-align:      center;
+
+	animation-name:      land-in;
+	animation-duration:  0.75s;
+  	animation-delay:     0.5s;
+	animation-fill-mode: forwards;
+
+	opacity: 0;
 
 	height: 100%;
 
 	h3 {
 		font-family: "Times New Roman", Times, serif;
-		font-style: italic;
-		font-size: 2rem;
+		font-style:  italic;
+		font-size:   2rem;
 		color: rgba(255, 255, 255, 0.7);
 
 		@media screen and (max-width: 500px) {
@@ -22,7 +29,7 @@
 	h1 {
 		font-family: Lato-bold, Arial, Helvetica, sans-serif;
 		font-weight: normal;
-		font-size: 5rem;
+		font-size:   5rem;
 		color: #fff;
 
 		@media screen and (max-width: 500px) {
@@ -33,12 +40,27 @@
 	a {
 		text-decoration: none;
 
-		#get-started {
-			border: 2px solid #fff;
+		div#get-started {
+			border:        2px solid #fff;
 			border-radius: 3px;
+			
 			padding: 1rem;
-			margin: 2rem;
-			width: 10rem;
+			margin:  2rem;
+			width:   10rem;
+
+			animation-name:            flash;
+			animation-duration:        20s;
+		  	animation-delay:           3s;
+			animation-iteration-count: infinite;
+
+			transition-property:        background-color;
+			transition-duration:        0.1s;
+			transition-timing-function: ease-in;
+
+			&:hover {
+				background-color: rgba(255, 255, 255, 0.4);
+			}
+
 
 			@media screen and (max-width: 500px) {
 				margin: 1.5rem;
@@ -47,7 +69,7 @@
 			h4 {
 				font-family: Lato-bold, Arial, Helvetica, sans-serif;
 				font-weight: normal;
-				font-size: 1rem;
+				font-size:   1rem;
 				color: #fff;
 			}
 		}
@@ -56,7 +78,7 @@
 	h5 {
 		font-family: Lato, Arial, Helvetica, sans-serif;
 		font-weight: normal;
-		font-size: 1rem;
+		font-size:   1rem;
 		color: rgba(255, 255, 255, 0.7);
 
 		@media screen and (max-width: 500px) {

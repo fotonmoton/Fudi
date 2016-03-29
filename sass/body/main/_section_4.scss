@@ -28,6 +28,8 @@ section.section-4 {
 
 				text-decoration: none;
 
+				overflow: hidden;
+
 				@media screen and (max-width: 1300px) {
 					flex-basis: 25%;
 				}
@@ -41,6 +43,12 @@ section.section-4 {
 					padding: 6rem 0rem;
 					width: 100%;
 					text-align: center;
+
+					transition-duration: 0.2s;
+
+					&:hover {
+						transform: rotate(12deg) scale(1.3);
+					}
 					
 					@media screen and (max-width: 1000px) {
 						padding: 10rem 0rem;
@@ -81,56 +89,41 @@ section.section-4 {
 						font-weight: bold;
 						font-size: 1rem;
 						color: rgba(255, 255, 255, 0.8);
+
+						transform: rotate(-12deg) scale(0.9);
+
 					}
 
 					h2 {
 						font-family: Lato-bold, Arial, Helvetica, sans-serif;
 						font-size: 2rem;
 						color: #fff;
+
+						transform: rotate(-12deg) scale(0.9);
 					}
 				}
 			}
 			
 
-			div.cuisine-1 {
-				background: url("../img/img1.jpg") center center;
-			}
+			div.cuisine-1 {background: url("../img/img1.jpg") center center;}
 
-			div.cuisine-2 {
-				background: url("../img/img2.jpg") center center;
-			}
+			div.cuisine-2 {background: url("../img/img2.jpg") center center;}
 
-			div.cuisine-3 {
-				background: url("../img/img3.jpg") center center;
-			}
+			div.cuisine-3 {background: url("../img/img3.jpg") center center;}
 
-			div.cuisine-4 {
-				background: url("../img/img4.jpg") center center;
-			}
+			div.cuisine-4 {background: url("../img/img4.jpg") center center;}
 
-			div.cuisine-5 {
-				background: url("../img/img5.jpg") center center;
-			}
+			div.cuisine-5 {background: url("../img/img5.jpg") center center;}
 
-			div.cuisine-6 {
-				background: url("../img/img6.jpg") center center;
-			}
+			div.cuisine-6 {background: url("../img/img6.jpg") center center;}
 
-			div.cuisine-7 {
-				background: url("../img/img7.jpg") center center;
-			}
+			div.cuisine-7 {background: url("../img/img7.jpg") center center;}
 
-			div.cuisine-8 {
-				background: url("../img/img8.jpg") center center;
-			}
+			div.cuisine-8 {background: url("../img/img8.jpg") center center;}
 
-			div.cuisine-9 {
-				background: url("../img/img9.jpg") center center;
-			}
+			div.cuisine-9 {background: url("../img/img9.jpg") center center;}
 
-			div.cuisine-10 {
-				background: url("../img/img10.jpg") center center;
-			}
+			div.cuisine-10 {background: url("../img/img10.jpg") center center;}
 		}
 	}
 }
