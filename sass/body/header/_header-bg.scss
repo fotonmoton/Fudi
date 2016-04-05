@@ -1,7 +1,7 @@
 // Some hack for further manipulation with header background image.
 // Header-bg containver stays under header container with absolute positioning
 
-div.header-bg {
+div#header-bg {
 	background-image:    url("../img/main_image.jpg");
 	background-position: center center;
 	background-repeat:   no-repeat;
@@ -14,6 +14,10 @@ div.header-bg {
 	height: 100%;
 	
 	z-index: -1;
+
+	transition-property:        filter;
+	transition-duration:        0.5s;
+	transition-timing-function: ease-in-out;
 	
 	@media screen and (max-width: 1024px), (max-height: 1024px) {
 		background-image: url("../img/main_image_medium.jpg");

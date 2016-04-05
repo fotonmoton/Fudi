@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Recipes</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="js/slider.js" async defer></script>
+	<script src="js/header_blur.js" async defer></script>
 </head>
 <body>
 	<header>
@@ -30,7 +32,7 @@
 				<h5>OR SEND US OWN RECIPES AND GET REWARDED!</h5>
 			</div>
 		</div>
-		<div class="header-bg">	
+		<div id="header-bg">
 		</div>
 	</header>
 	<main>
@@ -120,14 +122,38 @@
 		</section>
 		<section class="section-3">
 			<div class="container review-container">
-				<img src="img/face.png" alt="" class="face">
-				<h4 class="review-text">
-					“I am so happy because I found this recipe, and it just made my life easier.
-					Thanks  so much for sharing!”
-				</h4>
-				<p class="sign">
-					- Michael Dawson, San Francisco, CA -
-				</p>
+				<div id="slider-viewport">
+					<div id="slider-container">
+						<div class="slider-item">
+							<img src="img/face1.jpg" alt="" class="face">
+							<h4 class="review-text">
+								“I am so happy because I found this recipe, and it just made my life easier.
+								Thanks  so much for sharing!”
+							</h4>
+							<p class="sign">
+								- Michael Dawson, San Francisco, CA -
+							</p>
+						</div>
+						<div class="slider-item">
+							<img src="img/face2.jpg" alt="" class="face">
+							<h4 class="review-text">
+								“The 1995 Zinfandel from Chateau Beaujolais brings us free-love-inducing sour cream midtones with a pasty mealy perfume.”
+							</h4>
+							<p class="sign">
+								- Michael Dawson, San Francisco, CA -
+							</p>
+						</div>
+						<div class="slider-item">
+							<img src="img/face3.jpg" alt="" class="face">
+							<h4 class="review-text">
+								“A mediocre rum aftertaste and salty almond undertones are coalesced in the 2006 Merlot from Gonzales Vineyards.”
+							</h4>
+							<p class="sign">
+								- Michael Dawson, San Francisco, CA -
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 		<section class="section-4">

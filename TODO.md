@@ -1,2 +1,2 @@
-- js events (animation on scrolling, carusel in review section)
+- js events (animation on scrolling)
 - ukrainian language
