@@ -14,6 +14,7 @@ footer {
 		font-size: 0.9rem;
 
 		.footer-element {
+			
 			@media screen and (max-width: 600px) {
 				flex: 1 1 100%;
 				text-align: center;
@@ -25,7 +26,26 @@ footer {
 			font-family: Lato-light, Arial, Helvetica, sans-serif;
 			color: #8b8b8b;
 		}
+		
+		a.language-switch {
+			text-decoration: none;
+			
+			div.button {
+				padding: 0.5rem;
+				border: 2px solid #414141;
+				border-radius: 3px;
 
+				p {
+					font-family: Lato-light, Arial, Helvetica, sans-serif;
+					color: #8b8b8b;
+				}
+			}
+
+			@media screen and (max-width: 600px) {
+				padding-top: 1rem;
+
+			}
+		}
 
 		ul.by {
 			list-style-type: none;

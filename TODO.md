@@ -1,2 +1,0 @@
-- js events (animation on scrolling)
-- ukrainian language
